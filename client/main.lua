@@ -41,6 +41,16 @@ local function PickupCoolDown()
     end)
 end
 
+local function PlayAnimation(ped, animDict, animName, animFlag)
+    if not DoesAnimDictExist(animDict) then
+	print("Invalid animation dictionry: " .. animDict)
+	return
+    end
+    loadAnimDict(animDict)
+    TaskPlayAnim(ped, animDict, animName, 4.0, 4.0, -1, animFlag, 0, false, false, false, "", false)
+    RemoveAnimDict(animDict)
+end
+
 local function LoadTargetProps()
     if not Config.BuyPropFromStore then
         for k, v in pairs(Config.List) do
@@ -123,16 +133,6 @@ end
 
 local function EnumeratePeds()
     return EnumerateEntities(FindFirstPed, FindNextPed, EndFindPed)
-end
-
-local function PlayAnimation(ped, animDict, animName, animFlag)
-    if not DoesAnimDictExist(animDict) then
-	print("Invalid animation dictionry: " .. animDict)
-	return
-    end
-    loadAnimDict(animDict)
-    TaskPlayAnim(ped, animDict, animName, 4.0, 4.0, -1, animFlag, 0, false, false, false, "", false)
-    RemoveAnimDict(animDict)
 end
 
 local function CanThrowProp(ped)
