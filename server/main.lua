@@ -16,12 +16,12 @@ end
 
 RegisterNetEvent("mh-trowprops:server:deleteObjectNetID")
 AddEventHandler("mh-trowprops:server:deleteObjectNetID", function(objectNetID)
-	TriggerClientEvent("mh-trowprops:client:deleteprop", -1, objectNetID)
+    TriggerClientEvent("mh-trowprops:client:deleteprop", -1, objectNetID)
 end)
 
 RegisterNetEvent("mh-trowprops:server:touch")
 AddEventHandler("mh-trowprops:server:touch", function(player, ped, velocity)
-	TriggerClientEvent("mh-trowprops:client:touch", player, ped, velocity)
+    TriggerClientEvent("mh-trowprops:client:touch", player, ped, velocity)
 end)
 
 RegisterNetEvent("mh-trowprops:server:pickup")
