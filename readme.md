@@ -28,7 +28,7 @@
 
 
 # Install
-- 1. Create a folder [mh] in the folder `resources` and place the folder `mh-trowprops` inside the [mh] folder
+- 1. Create a folder `[mh] `in the folder `resources` and place the folder `mh-trowprops` inside the `[mh]` folder
 - 2. Add in the server.cfg, `ensure [mh]` (make sure you ensure it after the `ensure [qb]`)
 
 
