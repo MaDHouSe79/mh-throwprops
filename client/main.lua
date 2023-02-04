@@ -12,10 +12,10 @@ local isCooldown = false
 local canPickup = true
 
 local function loadAnimDict(dict)
-	RequestAnimDict(dict)
-	while not HasAnimDictLoaded(dict) do
-		Citizen.Wait(500)
-	end
+    RequestAnimDict(dict)
+    while not HasAnimDictLoaded(dict) do
+	Citizen.Wait(500)
+    end
 end
 
 local function loadModel(model)
@@ -88,13 +88,13 @@ local function DrawTxt(x, y, width, height, scale, text, r, g, b, a)
 end
 
 local entityEnumerator = {
-	__gc = function(enum)
-		if enum.destructor and enum.handle then
-			enum.destructor(enum.handle)
-		end
-		enum.destructor = nil
-		enum.handle = nil
+    __gc = function(enum)
+	if enum.destructor and enum.handle then
+	    enum.destructor(enum.handle)
 	end
+	enum.destructor = nil
+	enum.handle = nil
+    end
 }
 
 local function getDistance(a, b) 
@@ -103,53 +103,53 @@ local function getDistance(a, b)
 end
 
 local function EnumerateEntities(firstFunc, nextFunc, endFunc)
-	return coroutine.wrap(function()
-		local iter, id = firstFunc()
-		if not id or id == 0 then
-			endFunc(iter)
-			return
-		end
-		local enum = {handle = iter, destructor = endFunc}
-		setmetatable(enum, entityEnumerator)
-		local next = true
-		repeat
-			coroutine.yield(id)
-			next, id = nextFunc(iter)
-		until not next
-		enum.destructor, enum.handle = nil, nil
-		endFunc(iter)
-	end)
+    return coroutine.wrap(function()
+	local iter, id = firstFunc()
+	if not id or id == 0 then
+	    endFunc(iter)
+	    return
+	end
+	local enum = {handle = iter, destructor = endFunc}
+	setmetatable(enum, entityEnumerator)
+	local next = true
+	repeat
+	    coroutine.yield(id)
+	    next, id = nextFunc(iter)
+	until not next
+	enum.destructor, enum.handle = nil, nil
+	endFunc(iter)
+    end)
 end
 
 local function EnumeratePeds()
-	return EnumerateEntities(FindFirstPed, FindNextPed, EndFindPed)
+    return EnumerateEntities(FindFirstPed, FindNextPed, EndFindPed)
 end
 
 local function PlayAnimation(ped, animDict, animName, animFlag)
-	if not DoesAnimDictExist(animDict) then
-		print("Invalid animation dictionry: " .. animDict)
-		return
-	end
-	loadAnimDict(animDict)
-	TaskPlayAnim(ped, animDict, animName, 4.0, 4.0, -1, animFlag, 0, false, false, false, "", false)
-	RemoveAnimDict(animDict)
+    if not DoesAnimDictExist(animDict) then
+	print("Invalid animation dictionry: " .. animDict)
+	return
+    end
+    loadAnimDict(animDict)
+    TaskPlayAnim(ped, animDict, animName, 4.0, 4.0, -1, animFlag, 0, false, false, false, "", false)
+    RemoveAnimDict(animDict)
 end
 
 local function CanThrowProp(ped)
-	return not (IsPedRagdoll(ped) or IsPedClimbing(ped) or IsPlayerDead(ped))
+    return not (IsPedRagdoll(ped) or IsPedClimbing(ped) or IsPlayerDead(ped))
 end
 
 local function SetPedRagdoll(ped, velocity)
-	SetPedToRagdoll(ped, 3000, 3000, 0, 0, 0, 0)
-	SetEntityVelocity(ped, velocity / 6.0)
+    SetPedToRagdoll(ped, 3000, 3000, 0, 0, 0, 0)
+    SetEntityVelocity(ped, velocity / 6.0)
 end
 
 local function GetPlayerFromPed(ped)
-	for _, player in ipairs(GetActivePlayers()) do
-		if GetPlayerPed(player) == ped then
-			return player
-		end
+    for _, player in ipairs(GetActivePlayers()) do
+	if GetPlayerPed(player) == ped then
+	    return player
 	end
+    end
 end
 
 local function AddLongString(txt)
@@ -229,11 +229,11 @@ end)
 
 RegisterNetEvent("mh-trowprops:client:touch")
 AddEventHandler("mh-trowprops:client:touch", function(ped, velocity)
-	if (ped == -1) then
-		SetPedRagdoll(PlayerPedId(), velocity)
-	else
-		SetPedRagdoll(NetToPed(ped), velocity)
-	end
+    if (ped == -1) then
+	SetPedRagdoll(PlayerPedId(), velocity)
+    else
+	SetPedRagdoll(NetToPed(ped), velocity)
+    end
 end)
 
 RegisterNetEvent("mh-trowprops:client:createprop")
