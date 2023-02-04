@@ -5,20 +5,20 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/MaDHouSe79/mh-trowprops/issues">
-    <img src="https://img.shields.io/github/issues/MaDHouSe79/mh-trowprops"/> 
+  <a href="https://github.com/MaDHouSe79/mh-throwprops/issues">
+    <img src="https://img.shields.io/github/issues/MaDHouSe79/mh-throwprops"/> 
   </a>
-  <a href="https://github.com/MaDHouSe79/mh-trowprops/watchers">
-    <img src="https://img.shields.io/github/watchers/MaDHouSe79/mh-trowprops"/> 
+  <a href="https://github.com/MaDHouSe79/mh-throwprops/watchers">
+    <img src="https://img.shields.io/github/watchers/MaDHouSe79/mh-throwprops"/> 
   </a> 
-  <a href="https://github.com/MaDHouSe79/mh-trowprops/network/members">
-    <img src="https://img.shields.io/github/forks/MaDHouSe79/mh-trowprops"/> 
+  <a href="https://github.com/MaDHouSe79/mh-throwprops/network/members">
+    <img src="https://img.shields.io/github/forks/MaDHouSe79/mh-throwprops"/> 
   </a>  
-  <a href="https://github.com/MaDHouSe79/mh-trowprops/stargazers">
-    <img src="https://img.shields.io/github/stars/MaDHouSe79/mh-trowprops?color=white"/> 
+  <a href="https://github.com/MaDHouSe79/mh-throwprops/stargazers">
+    <img src="https://img.shields.io/github/stars/MaDHouSe79/mh-throwprops?color=white"/> 
   </a>
   <a href="https://github.com/MaDHouSe79/mh-trowprops/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/MaDHouSe79/mh-trowprops?color=black"/> 
+    <img src="https://img.shields.io/github/license/MaDHouSe79/mh-throwprops?color=black"/> 
   </a>      
 </p>
 
@@ -26,6 +26,8 @@
   <img alig src="https://github-profile-trophy.vercel.app/?username=MaDHouSe79&margin-w=15&column=6" />
 </p>
 
+# MH Throw Props
+- just throw with props :)
 
 # Install
 - 1. Create a folder `[mh] `in the folder `resources` and place the folder `mh-trowprops` inside the `[mh]` folder
