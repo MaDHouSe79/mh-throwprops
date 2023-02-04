@@ -30,14 +30,14 @@
 - just throw with props :)
 
 # Install
-- 1. Create a folder `[mh] `in the folder `resources` and place the folder `mh-trowprops` inside the `[mh]` folder
+- 1. Create a folder `[mh] `in the folder `resources` and place the folder `mh-throwprops` inside the `[mh]` folder
 - 2. Add in the server.cfg, `ensure [mh]` (make sure you ensure it after the `ensure [qb]`)
 
 
 # QB Shared items
 - dont forget to add the images in the qb-inventory image folder.
 ````lua
-	-- mh-trowprops items 
+	-- mh-throwprops items 
 	['garbagebin'] 			         = {['name'] = 'garbagebin', 			  	    ['label'] = 'Garbage Bin', 				['weight'] = 5000, 	    ['type'] = 'item', 		['image'] = 'garbagebin.png', 		    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A garbage bin'},
 	['garbagebag'] 			         = {['name'] = 'garbagebag', 			  	    ['label'] = 'Garbage Beg', 				['weight'] = 5000, 	    ['type'] = 'item', 		['image'] = 'garbagebag.png', 		    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A garbage beg'},
 	['roadcone'] 			         = {['name'] = 'roadcone', 			  	        ['label'] = 'Road Cone', 				['weight'] = 5000, 	    ['type'] = 'item', 		['image'] = 'roadcone.png', 		    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A road Cone'},
@@ -133,13 +133,13 @@
 - to add in `Config.Locations`
 ```lua
 ["Propsmarket"] = {
-    ["label"] = "Prop Shop",
+    ["label"] = "Throw Prop Shop",
     ["coords"] = vector4(-482.7943, -1760.9548, 18.6416, 17.5302),
     ["ped"] = 'mp_m_shopkeep_01',
     ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
     ["radius"] = 1.5,
     ["targetIcon"] = "fas fa-shopping-basket",
-    ["targetLabel"] = "Open Prop Shop",
+    ["targetLabel"] = "Open Shop",
     ["products"] = Config.Products["props"],
     ["showblip"] = true,
     ["blipsprite"] = 52,
