@@ -36,7 +36,7 @@
 ![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/bowling_ball.png?raw=true)
 ![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/bowling_pin.png?raw=true)
 ![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/boxpile.png?raw=true)
-![alttext](https:://github.com/MaDHouSe79/mh-throwprops/blob/main/images/garbagebag.png?raw=true)
+![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/garbagebag.png?raw=true)
 ![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/garbagebin.png?raw=true)
 ![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/lady_shoe.png?raw=true)
 ![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/luggage.png?raw=true)
