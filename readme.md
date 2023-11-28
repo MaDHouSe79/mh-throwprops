@@ -33,15 +33,15 @@
 - 1. Create a folder `[mh] `in the folder `resources` and place the folder `mh-throwprops` inside the `[mh]` folder
 - 2. Add in the server.cfg, `ensure [mh]` (make sure you ensure it after the `ensure [qb]`)
  
-![alt text](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/bowling_ball.png?raw=true)
-![alt text](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/bowling_pin.png?raw=true)
-![alt text](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/boxpile.png?raw=true)
-![alt text](://github.com/MaDHouSe79/mh-throwprops/blob/main/images/garbagebag.png?raw=true)
-![alt text](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/garbagebin.png?raw=true)
-![alt text](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/lady_shoe.png?raw=true)
-![alt text](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/luggage.png?raw=true)
-![alt text](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/man_shoe.png?raw=true)
-![alt text](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/roadcone.png?raw=true)
+![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/bowling_ball.png?raw=true)
+![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/bowling_pin.png?raw=true)
+![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/boxpile.png?raw=true)
+![alttext](://github.com/MaDHouSe79/mh-throwprops/blob/main/images/garbagebag.png?raw=true)
+![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/garbagebin.png?raw=true)
+![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/lady_shoe.png?raw=true)
+![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/luggage.png?raw=true)
+![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/man_shoe.png?raw=true)
+![alttext](https://github.com/MaDHouSe79/mh-throwprops/blob/main/images/roadcone.png?raw=true)
 
 
 # QB Shared items
