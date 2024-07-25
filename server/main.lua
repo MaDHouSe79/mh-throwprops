@@ -30,7 +30,7 @@ AddEventHandler("mh-trowprops:server:pickup", function(object)
     local item = GetItem(object)
     if item ~= nil then
         Player.Functions.AddItem(item, 1, nil)
-        TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items[item], 'add', 1)
+        TriggerClientEvent('qb-inventory:client:ItemBox', source, QBCore.Shared.Items[item], 'add', 1)
     end
 end)
 
@@ -40,7 +40,7 @@ AddEventHandler("mh-trowprops:server:throw", function(object, objectNetID)
     local item = GetItem(object)
     if item ~= nil then
         Player.Functions.RemoveItem(item, 1)
-        TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items[item], 'remove', 1)
+        TriggerClientEvent('qb-inventory:client:ItemBox', source, QBCore.Shared.Items[item], 'remove', 1)
         TriggerClientEvent('mh-trowprops:client:deleteprop', -1, objectNetID)
     end
 end)
